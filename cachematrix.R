@@ -42,3 +42,14 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+## Testing
+
+z<- matrix(c(1,2,3,4), 2,2)
+
+z2<- makeCacheMatrix(z)
+
+# inverse returned after computation
+cacheSolve(z2)
+
+# inverse returned after cache 
+cacheSolve(z2)
